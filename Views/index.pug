@@ -1,0 +1,30 @@
+  
+doctype html
+html
+  include head.pug
+
+body
+table(id='tsearch')
+   tbody
+     tr
+      th Select catagoery to search colleges
+     tr
+      td City
+     tr
+      td
+        include search.pug
+     tr
+      table(id='tMain')
+       tbody
+        tr
+          th ID
+          th Name
+          th City
+          th 
+            each college in collegedata
+              tr
+                td=college.id
+                td=college.name
+                td=college.city
+                td
+                  a(href=`/details/${college.id}`)='Details'

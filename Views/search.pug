@@ -1,0 +1,6 @@
+
+city
+ select(name='dropDown', id='ddCity')
+  each college in colleges
+   option=college.city
+input(type='Button', value='Search', name='Done',  onclick="js_getCollegesByCity()")

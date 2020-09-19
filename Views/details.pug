@@ -1,0 +1,18 @@
+head
+ link(rel="stylesheet", href="/css/styles.css")
+ body
+h1(id="h1Detail")=detaildata.name
+ h2(id='h2Detail')=detaildata.City, Ma
+ h3(id='h3Detail') Welcome to College info
+table(id='tdetail')
+ tbody
+  tr
+    each college in detaildata
+      tr
+       td School website
+       td
+         a(href=`${college.school_url}`)=college.school_url
+      tr
+       td Price calculator website
+       td                  
+         a(href=`${college.price_calculator_url}`)=college.price_calculator_url

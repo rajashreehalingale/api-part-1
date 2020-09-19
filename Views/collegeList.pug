@@ -1,0 +1,18 @@
+CollegeList pug 
+      table(id='tepisode')
+       tbody
+        tr
+          th ID
+          th Name
+          th City
+          th School website
+          th Price calculator website
+            each college in collegedata
+              tr
+                td=college.id
+                td=college.name
+                td=college.city
+                td=college.school_url
+                td=college.price_calculator_url
+                td
+                 input(type='Button',value="Details", name=`${college.id}`, id='Details',  onclick="js_getCollegesByID()")
