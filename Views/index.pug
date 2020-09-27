@@ -8,11 +8,18 @@ table(id='tsearch')
    tbody
      tr
       th Select catagoery to search colleges
+      th
      tr
       td City
+      td
      tr
       td
         include search.pug
+      td
+     tr
+      td
+      td(align='left' width=180)
+       div()=collegedata[0].city + ', Ma'
      tr
       table(id='tMain')
        tbody
@@ -23,8 +30,8 @@ table(id='tsearch')
           th 
             each college in collegedata
               tr
-                td=college.id
+                td=college.ID
                 td=college.name
                 td=college.city
                 td
-                  a(href=`/details/${college.id}`)='Details'
+                  a(href=`/details/${college.ID}`)='Details'

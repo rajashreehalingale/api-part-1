@@ -11,13 +11,11 @@ const getCollegesByCity = (request, response) => {
   const collegedata = colleges.filter(college => college.city === city)
  
    return response.render('index', {colleges, collegedata })
- // return response.send(collegedata)
 }
 
 const getCollegesByID = (request, response) => {
 
   const detaildata = colleges.filter(college => college.id === parseInt(request.params.id))
-
   return response.render('details', {detaildata})
 }
 

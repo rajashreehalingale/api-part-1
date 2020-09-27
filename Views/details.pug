@@ -1,11 +1,10 @@
-head
- link(rel="stylesheet", href="/css/styles.css")
- body
-h1(id="h1Detail")=detaildata.name
- h2(id='h2Detail')=detaildata.City, Ma
- h3(id='h3Detail') Welcome to College info
+include head.pug
+body
+h1(id="h1Detail") Welcome to College info
+h2(id='h2Detail')=detaildata[0].name + ' ' + detaildata[0].city + ', Ma'
 table(id='tdetail')
  tbody
+  tr
   tr
     each college in detaildata
       tr

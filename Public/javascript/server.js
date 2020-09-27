@@ -3,6 +3,7 @@ function js_getCollegesByCity() {
 
  // window.location.href = "http://localhost:1337/index/city/" + document.getElementById("ddCity").value;
  const loc = "http://localhost:1337/index/city/" + document.getElementById("ddCity").value;
+ // const loc = __dirname + document.getElementById("ddCity").value;
 
  locationChange(loc)
 

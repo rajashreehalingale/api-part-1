@@ -10,15 +10,15 @@ h1{
  li {
    margin-left: 10%;
  } 
- #tDetail{
+ #tdetail{
     margin-left:auto; 
    margin-right:auto;
    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
    border-collapse: collapse;
-   width: 70%;
+   border-collapse: collapse;
  }
   
- #tDetail td:first{background-color: #f2f2f2;}
+ #tdetail td:first{background-color: #f2f2f2;}
  
  h1{
   color:#0a0a0aec;
@@ -45,6 +45,7 @@ h1{
     border: 2px solid #0a0a0aec;
     padding: 8px;
   }
+
   
   #tMain tr:nth-child(even){background-color: #f2f2f2;}
   
@@ -56,4 +57,9 @@ h1{
     text-align: left;
     background-color: #630ac9ec;
     color: white;
+  }
+
+  #div {
+    border: 1px solid white;
+    font-weight: bold;
   }
